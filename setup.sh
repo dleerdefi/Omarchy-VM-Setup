@@ -19,7 +19,7 @@ fi
 echo "==> Installing packages..."
 pacman -S --needed --noconfirm \
     libvirt libvirt-python virt-manager virt-install virtiofsd \
-    qemu-desktop edk2-ovmf spice spice-gtk virglrenderer
+    qemu-desktop edk2-ovmf spice spice-gtk virglrenderer dnsmasq
 
 echo "==> Adding $REALUSER to kvm and libvirt groups..."
 usermod -aG kvm,libvirt "$REALUSER"
